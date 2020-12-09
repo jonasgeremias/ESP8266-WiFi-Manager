@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=0.9">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="theme-color" content="#eaf4f4">
+   <link rel="manifest" href="./manifest.json">
+   <link rel="icon" type="image/x-icon" href="./favicon.png">
+   <link rel="stylesheet" href="./mini.css">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Configuração</title>
+</head>
+
+<body>
+   <noscript>Habilite o JavaScript do navegador</noscript>
+   <div class="row fill">
+
+      <script>
+         function exibirSenha(id) {
+            var input_senha;
+            if (id == 255) input_senha = document.getElementById('senhaconfig');
+            else input_senha = document.getElementById('pass' + id);
+            input_senha.setAttribute('type', 'text');
+            var btn_show_hide = document.getElementById('btn_show_hide' + id);
+            btn_show_hide.setAttribute('onclick', 'ocultarSenha(' + id + ')');
+            btn_show_hide.innerHTML = "Ocultar";
+         }
+         function ocultarSenha(id) {
+            var input_senha;
+            if (id == 255) input_senha = document.getElementById('senhaconfig');
+            else input_senha = document.getElementById('pass' + id);
+            input_senha.setAttribute('type', 'password');
+            var btn_show_hide = document.getElementById('btn_show_hide' + id);
+            btn_show_hide.setAttribute('onclick', 'exibirSenha(' + id + ')');
+            btn_show_hide.innerHTML = "Exibir";
+         }
+      </script>
+
+      <div class="space"></div>
+      <h1 class='text-center block'>Configuração do Módulo</h1>
+      <div class="line"></div>
+
+      <div class="block">
+         <div class='card fluid s-p s-m'>
+            <div class='section dark'>Propriedades</div>
+            <div class='section row'>
+               <div class="fill"><label>MAC:</label><label class="bold" id='mac'></label></div>
+               <div class="fill"><label>Versão Software:</label><label class="bold" id="vsw"></label></div>
+               <label class="fill">Nome do Dispositivo:</label><input type="text" class="fill s-m" id="nome" value="">
+               <label class="row fill" for="pass1">Nova senha de configuração:</label>
+               <input class="col-sm-10 s-m" type="password" id="pass1" placeholder="Insira a nova senha" maxlength="4">
+               <button type="button" id="btn_show_hide1" class="button primary col-sm-2 s-m s-p overflow-h"
+                  onclick="exibirSenha(1)">Exibir</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="space"></div>
+   <div class="block">
+      <div class='card fluid s-p s-m'>
+         <div class='section dark'>Senha de configuração atual</div>
+         <div class='section row'>
+            <label class="col-sm-12 block" for="senhaconfig">Senha:</label>
+            <input class="col-sm-10 s-m" type="password" id="senhaconfig" placeholder="Insira a senha" maxlength="4">
+            <button type="button" id="btn_show_hide255" class="button primary col-sm-2 s-m s-p overflow-h"
+               onclick="exibirSenha(255)">Exibir</button>
+         </div>
+      </div>
+   </div>
+   <div class="space"></div>
+   <button type="button" id="formbtsubmit" class="button block primary" onclick="enviarFormulario()"
+      disabled="disabled">Enviar Configurações</button>
+   <button class="button block secondary" onclick="window.location.href = 'index.html'">Voltar</button>
+   </div>
+   <br><br>
+   <script src="./configmodulo.js"></script>
+   </div>
+</body>
+
+</html>

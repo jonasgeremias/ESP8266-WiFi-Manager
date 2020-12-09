@@ -1,0 +1,20 @@
+set(COMPONENT_SRCS main.c)
+set(COMPONENT_ADD_INCLUDEDIRS ".")
+set(INCLUDE_DIRS src)
+# set(
+#    COMPONENT_EMBED_FILES
+#    src/index.html
+#    src/configwifi.html
+#    src/favicon.png
+#    src/mini.css
+#    src/configwifi.js
+#    src/configmodulo.html
+#    src/configmodulo.js
+#    src/realtime.html
+#    src/realtime.js
+#    src/manifest.json
+#    src/iconwifi_lg.png
+#    src/iconwifi_md.png
+#    src/iconwifi_sm.png
+# )
+register_component()
