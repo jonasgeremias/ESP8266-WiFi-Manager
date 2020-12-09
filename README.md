@@ -97,5 +97,7 @@ Porém, se a aplicação é pequena, pode ser usado este projeto como base para 
 <img src="./_docs/10.png" width="400" height="400" />
 
 ## Autores
+
 Jonas P. Geremias
+
 Filipi Piucco
