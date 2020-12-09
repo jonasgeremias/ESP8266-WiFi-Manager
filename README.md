@@ -18,7 +18,7 @@
 
 ## Conexão com AP
 
-O presente projeto, criado para o ESP8266, gera um ponto de acesso chamado
+O presente projeto, criado para o ESP8266 (Wemos D1), gera um ponto de acesso chamado
 "WiFi-Manager" e a senha é "wifimanager", para acessár o Web Server, deve ser conectado no seu ponto de acesso e inserir no navegador o endereço IP 10.0.0.1, este IP foi fixado no código e não existe configuração deste parâmetro.
 
 ## WEB Server
@@ -90,6 +90,7 @@ Porém, se a aplicação é pequena, pode ser usado este projeto como base para 
 * Filipi Piucco
 
 # Imagens da Aplicação
+<img src="./_docs/11.jpeg" width="600" height="300" />
 <img src="./_docs/1.jpeg" width="200" height="400" />
 <img src="./_docs/2.jpeg" width="200" height="400" />
 <img src="./_docs/3.jpeg" width="200" height="400" />
