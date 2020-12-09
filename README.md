@@ -84,6 +84,11 @@ e sistemas embarcados pois é um trabalho que uniu muitas das linguagens e conce
 Como Sugestão, fica a criação de um aplicativo mobile com framework multiplataforma, liberando a necessidade de lógicas de tela e ocupação de memória por arquivos estáticos, mantendo apenas as rotas de configurações.
 Porém, se a aplicação é pequena, pode ser usado este projeto como base para desenvolvimentos futuros.
 
+## Autores
+
+* Jonas P. Geremias
+* Filipi Piucco
+
 # Imagens da Aplicação
 <img src="./_docs/1.jpeg" width="200" height="400" />
 <img src="./_docs/2.jpeg" width="200" height="400" />
@@ -95,9 +100,3 @@ Porém, se a aplicação é pequena, pode ser usado este projeto como base para 
 <img src="./_docs/8.jpeg" width="200" height="400" />
 <img src="./_docs/9.jpeg" width="200" height="400" />
 <img src="./_docs/10.png" width="400" height="400" />
-
-## Autores
-
-Jonas P. Geremias
-
-Filipi Piucco
