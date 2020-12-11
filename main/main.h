@@ -6,6 +6,9 @@
    #include "esp_log.h"
 #endif
 
+
+#define SENSORES
+
 // Funçoes genéricas
 #define MAKE8(a, i)        ((u8_t)(a >> (8 * (3 - i)) & 0xff))
 #define MAKE32(a, b, c, d) (((u32_t)((a) &0xff) << 24) | ((u32_t)((b) &0xff) << 16) | ((u32_t)((c) &0xff) << 8) | (u32_t)((d) &0xff))

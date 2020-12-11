@@ -70,6 +70,10 @@ No código atual, foi usado apenas o modo de piscada lenta para indicar que a ta
 
 Este serviço de configuração e conexão Wi-Fi, são serviços base e secundários na aplicação de IoT. Dispensando o uso de Botôes em GPIOs e Telas, usando um smartphone e assim deixando uma aplicação bem mais compacta.
 
+### Sensores
+
+Foi implementado os sensores DHT11 e Ultrassônico em tarefas paralelas, com variáveis sendo atualizadas no WEB Server em tempo real.
+
 ## Front End
 
 Para criar o Front End foi utilizado um framework chamado _mini.css_ com algumas alterações, facilitando no desenvolvimento das telas do WEB Server.
